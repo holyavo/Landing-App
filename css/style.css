@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ body{
+    font-family: 'Quicksand', sans-serif;
+    color: #000;
+
+    position: relative;
+ }
+
+ .time-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    padding-top: 65px;
+ }
+
+ #time{
+     font-size: 8rem;
+ }
+
+ h1{
+     margin-bottom: 3rem;
+
+ }
+
+ h2{
+     margin-bottom: .5rem;
+     opacity: .6;
+ }
+
+
+ @media(max-width: 700px){
+     #time{
+        font-size: 6rem;
+     }
+ }
+
+
+.temperature-container{
+     position: absolute;
+     right: 10px;
+
+     padding-top: 15px;
+ }
+
+.location, 
+.temperature{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+}
+.location{
+    display: flex;
+    align-items: center;
+}
+.location h1{
+    margin: 0;
+}
+.temperature{
+    flex-direction: column;
+}
+
+.degree-section{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.degree-section span{
+    margin-left: 10px;
+    font-size: 30px;
+}
+
+.degree-section h2{
+    font-size: 40px;
+}
+
+.temperature-description{
+    font-size: 20px;
+}
+
+
